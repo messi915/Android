@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReqServiceDetail">
+
+    <TextView
+        android:id="@+id/mainSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:textColor="#000000"
+        android:text="Services"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main">
+
+            <TextView
+                android:background="@drawable/border"
+                android:layout_marginTop="52dp"
+                android:id="@+id/selectedData"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/priceOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sview"
+        android:layout_marginTop="6dp"
+        android:textColor="#000000"
+
+        android:layout_marginRight="16dp"
+        android:paddingRight="24dp"
+
+        android:gravity="right"
+        android:text="jjjjjjjjjjjjjjj"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sview"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="44dp"
+        android:text="SELECT DAY"
+        android:textColor="#000000"/>
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_below="@+id/priceOutput"
+        android:background="@drawable/border2"
+        android:layout_marginLeft="252dp"
+        android:layout_marginRight="25dp">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note"
+        android:layout_below="@id/sview"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="78dp"
+        android:text="ADD NOTES"
+        android:textColor="#000000" />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/editText_notes"
+        android:layout_height="222dp"
+        android:gravity="top"
+        android:background="@drawable/border"
+        android:layout_below="@+id/note"
+        android:text="hhhhhh"/>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_notes"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:text="SUBMIT" />
+
+
+</RelativeLayout>
